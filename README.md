@@ -1,72 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-# DEMO
+# Daily Tasks Manager
 
-https://simple-todo-using-choreo.vercel.app/
+The Daily Tasks Manager is an open-source application that allows users to manage their daily tasks efficiently. It provides a user-friendly interface for managing tasks, including features such as drag-and-drop task migration and filtering tasks by status. The application is built using ReactJS and can be integrated with either a GraphQL or REST API backend.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftmkasun%2FChoreo-simple-TODO)
+## Features
 
-# How to run the app locally
+* Create, update, and delete tasks
+* Drag-and-drop task migration between different task statuses
+* Filter tasks based on their status
+* User-friendly interface with intuitive design
+* Integration with a backend API for data management
 
-- Run
-```
-npm ci
-```
-from the root folder of the app (where `package.json` resides)
+## Installation
 
-- Then run
+To install and run the Daily Tasks Manager locally, follow these steps:
 
-```
-npm start
-```
+1. Clone the repository:
 
-this will build the React Application with development configurations and start the developmet web server locally in port 3000
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">git clone https://github.com/your-username/daily-tasks-manager.git
+</code></div></div></pre>
 
-- To access the app visit
+2. Navigate to the project directory:
 
-```
-https://localhost:3000/
-```
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">cd daily-tasks-manager
+</code></div></div></pre>
 
+3. Install the dependencies using npm or yarn:
 
-# Service implementation
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">npm install
+</code></div></div></pre>
 
-https://github.com/tmkasun/todo-api
+or
 
-### `npm start`
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">yarn install
+</code></div></div></pre>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Start the development server:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">npm start
+</code></div></div></pre>
 
-### `npm run build`
+or
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>shell</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">yarn start
+</code></div></div></pre>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+5. Open your browser and visit `http://localhost:3000` to access the Daily Tasks Manager.
 
-See the section about [deployment](#deployment) for more information.
+## Backend Integration
 
-## Troubleshooting
+The Daily Tasks Manager can be integrated with either a GraphQL or REST API backend to manage task data. You can choose the approach that suits your needs. To integrate the backend, follow these steps:
 
-### `npm start` doesn’t detect changes
+1. Configure the backend API endpoint in the project. In the source code, locate the file responsible for API configuration, such as `api.js` or `graphql.js`.
+2. Replace the default API endpoint with your own backend API URL.
+3. Modify the API requests and responses to match the specifications of your backend API.
 
-When you save a file while `npm start` is running, the browser should refresh with the updated code.<br>
-If this doesn’t happen, try one of the following workarounds:
+Make sure your backend API provides the necessary endpoints to perform CRUD operations on tasks and supports the required data structure.
 
-* If your project is in a Dropbox folder, try moving it out.
-* If the watcher doesn’t see a file called `index.js` and you’re referencing it by the folder name, you [need to restart the watcher](https://github.com/facebookincubator/create-react-app/issues/1164) due to a Webpack bug.
-* Some editors like Vim and IntelliJ have a “safe write” feature that currently breaks the watcher. You will need to disable it. Follow the instructions in [“Adjusting Your Text Editor”](https://webpack.js.org/guides/development/#adjusting-your-text-editor).
-* If your project path contains parentheses, try moving the project to a path without them. This is caused by a [Webpack watcher bug](https://github.com/webpack/watchpack/issues/42).
-* On Linux and macOS, you might need to [tweak system settings](https://webpack.github.io/docs/troubleshooting.html#not-enough-watchers) to allow more watchers.
-* If the project runs inside a virtual machine such as (a Vagrant provisioned) VirtualBox, create an `.env` file in your project directory if it doesn’t exist, and add `CHOKIDAR_USEPOLLING=true` to it. This ensures that the next time you run `npm start`, the watcher uses the polling mode, as necessary inside a VM.
+## Contributing
 
-If none of these solutions help please leave a comment [in this thread](https://github.com/facebookincubator/create-react-app/issues/659).
+Contributions are welcome! If you would like to contribute to the Daily Tasks Manager, please follow these steps:
 
-### `npm run build` silently fails
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Implement your changes.
+4. Test your changes thoroughly.
+5. Commit and push your changes to your forked repository.
+6. Create a pull request to the main repository, explaining the purpose and details of your changes.
 
-It is reported that `npm run build` can fail on machines with no swap space, which is common in cloud environments. If [the symptoms are matching](https://github.com/facebookincubator/create-react-app/issues/1133#issuecomment-264612171), consider adding some swap space to the machine you’re building on, or build the project locally.
+Please make sure to adhere to the existing code style and conventions.
+
+## License
+
+The Daily Tasks Manager is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+The Daily Tasks Manager project is built upon the contributions of many individuals. We would like to thank all the contributors for their valuable input.
+
+## Contact
+
+If you have any questions or suggestions regarding the Daily Tasks Manager, please feel free to reach out to us at [project_email@example.com](mailto:project_email@example.com).
