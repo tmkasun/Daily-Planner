@@ -5,6 +5,10 @@ The Daily Tasks Manager is an open-source application that allows users to manag
 
 [Demo](https://days.knnect.com)
 
+![image](https://github.com/tmkasun/Daily-Planner/assets/3313885/c17eabd5-6454-4ea0-9a59-bd12fb918d43)
+
+![image](https://github.com/tmkasun/Daily-Planner/assets/3313885/aa23937a-a553-4a25-b5e1-bab8834154a5)
+
 ## Features
 
 * Create, update, and delete tasks
