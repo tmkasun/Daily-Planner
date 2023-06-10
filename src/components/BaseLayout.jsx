@@ -6,7 +6,7 @@ export default function BaseLayout(props) {
         <main className="base-grid">
             <div className="top-bar">{header}</div>
             <div className="task-board">{children}</div>
-            <div className="grid-footer">
+            {/* <div className="grid-footer">
                 Powered By{' '}
                 <a
                     className="footer-choreo-link"
@@ -15,7 +15,7 @@ export default function BaseLayout(props) {
                 >
                     Choreo
                 </a>
-            </div>
+            </div> */}
         </main>
     );
 }

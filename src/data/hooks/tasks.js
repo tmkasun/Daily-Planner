@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchGraphQL } from '../utils/gqlHelper';
 import useUser from './user';
+import { mockTasks } from '../utils/mockData'
 
 export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
@@ -53,8 +54,8 @@ export const useTaskGroups = () => {
                         }
                     }
                 }`;
-                const data = await fetchGraphQL(query, user);
-                setData(data.data.groups);
+                // const data = await fetchGraphQL(query, user);
+                setData(mockTasks);
             } catch (error) {
                 console.error(error);
                 setError(error);
@@ -129,7 +130,7 @@ export function useUpdateTask() {
         try {
             const response = await fetch(
                 `${API_BASE_URL}/tasks/${updatedTask.id}/change-status` +
-                    `?${generateCustomQueries()}`,
+                `?${generateCustomQueries()}`,
                 {
                     headers: {
                         Authorization: `bearer ${user.accessToken}}`,
@@ -178,7 +179,7 @@ export function useDeleteTask() {
         try {
             const response = await fetch(
                 `${API_BASE_URL}/tasks/${task.id}` +
-                    `?${generateCustomQueries()}`,
+                `?${generateCustomQueries()}`,
                 {
                     headers: {
                         Authorization: `bearer ${user.accessToken}`,
@@ -233,7 +234,7 @@ export function useMoveTask() {
         try {
             const response = await fetch(
                 `${API_BASE_URL}/tasks/${movingTask.id}/change-group` +
-                    `?${generateCustomQueries()}`,
+                `?${generateCustomQueries()}`,
                 {
                     headers: {
                         Authorization: `bearer ${user.accessToken}}`,

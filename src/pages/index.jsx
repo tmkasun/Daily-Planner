@@ -1,4 +1,3 @@
-// import { TokenExchangePlugin } from '@asgardeo/token-exchange-plugin';
 import React, { useCallback, useMemo, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -184,11 +183,7 @@ export default function Routing() {
                 <Route
                     exact
                     path="/"
-                    render={() => (
-                        <Protected>
-                            <App />
-                        </Protected>
-                    )}
+                    component={App}
                 />
                 <Route exact path="/oauth/callback" component={Callback} />
                 <Route exact path="/login" component={Login} />

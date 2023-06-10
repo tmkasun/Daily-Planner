@@ -6,7 +6,7 @@ export default function Header(props) {
     return (
         <div className="header-container">
             <div className="header-left">
-                <div className="choreo-logo-container">
+                {/* <div className="choreo-logo-container">
                     <img
                         width={33}
                         height={24}
@@ -14,8 +14,8 @@ export default function Header(props) {
                         src={logo}
                         alt="Choreo Logo"
                     />
-                </div>
-                <h4>Todo Dashboard</h4>
+                </div> */}
+                <h4>Daily Planner</h4>
             </div>
             <div className="header-right">
                 <AvatarMenu />

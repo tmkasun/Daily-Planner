@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { parseJwt } from '../utils/auth';
 import { COOKIES, deleteCookie, getCookie } from '../utils/cookies';
+import { mockUser } from '../utils/mockData';
 
 const customParams = (user) => ({
     'x-choreo-user-email': user.email,
@@ -10,7 +11,7 @@ const customParams = (user) => ({
 
 export const readUser = () => {
     const accessToken = getCookie(COOKIES.CHOREO_ACCESS_TOKEN);
-    let user = null;
+    let user = mockUser;
     if (accessToken) {
         const idToken = getCookie(COOKIES.CHOREO_ID_TOKEN);
         const asgardeoIdToken = getCookie(COOKIES.ASGARDEO_ID_TOKEN);
@@ -37,7 +38,7 @@ export default function useUser() {
 
     const refreshUser = useCallback(() => {
         setUser(readUser());
-    });
+    }, []);
     useEffect(refreshUser, [accessToken]);
     const generateCustomParams = () => {
         if (user) {
