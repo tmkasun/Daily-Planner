@@ -1,7 +1,9 @@
 
 # Daily Tasks Manager
 
-The Daily Tasks Manager is an open-source application that allows users to manage their daily tasks efficiently. It provides a user-friendly interface for managing tasks, including features such as drag-and-drop task migration and filtering tasks by status. The application is built using ReactJS and can be integrated with either a GraphQL or REST API backend.
+The Daily Tasks Manager is an open-source application that allows users to manage their daily tasks. It provides a user-friendly interface for managing tasks, including features such as drag-and-drop task migration and filtering tasks by status. The application is built using ReactJS and can be integrated with either a GraphQL or REST API backend.
+
+[Demo](https://days.knnect.com)
 
 ## Features
 
